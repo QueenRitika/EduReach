@@ -1,1 +1,92 @@
+        /* Container for each class section */
+        .class-section {
+            margin-bottom: 40px;
+            text-align: center;
+            /* Centers the entire class section */
+        }
 
+        /* Flexbox to center the subject boxes */
+        .subjects-container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow boxes to wrap onto the next line if necessary */
+            justify-content: center;
+            /* Center the subject boxes horizontally */
+            gap: 20px;
+            /* Space between subject boxes */
+            margin-top: 20px;
+        }
+
+        /* Fixed square box for subject items */
+        .subject-item {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            width: 4cm;
+            /* Fixed width of 4cm */
+            height: 4cm;
+            /* Fixed height of 4cm (square) */
+            display: inline-block;
+            /* Ensures that multiple subject boxes appear side by side */
+        }
+
+        .subject-item:hover {
+            transform: scale(1.05);
+        }
+
+        .subject-item h4 {
+            margin-top: 0;
+            font-size: 16px;
+            /* Font size for better readability inside the square box */
+        }
+
+        .subject-item p {
+            margin: 5px 0;
+        }
+
+        /* Professional Button Styling */
+        .join-meeting-btn {
+            background-color: #007BFF;
+            /* Blue color */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .join-meeting-btn:hover {
+            background-color: #0056b3;
+            /* Darker blue when hovered */
+        }
+
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            .subject-item {
+                width: 80%;
+                /* Adjust the width for smaller screens */
+                height: auto;
+                /* Allow height to adjust accordingly */
+                margin: 10px auto;
+                /* Center the subject boxes */
+            }
+        }
+
+        
+        #live-sessions h2 {
+            font-size: 2rem; /* Adjust font size as needed */
+            color: #333; /* Adjust text color as needed */
+            margin: 0;
+            text-align: center;
+        }
+        
