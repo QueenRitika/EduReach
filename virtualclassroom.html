@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Classroom - EduReach</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="images/icon/logo.png" alt="EduReach Logo"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="virtual_classroom.html" class="active">Virtual Classroom</a></li>
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+            </ul>
+            <a class="get-started" href="login.html">Get Started</a>
+        </nav>
+    </header>
+
+    <!-- Pre-recorded Lectures Section -->
+<div class="content-section" id="pre-recorded-lectures">
+    <h3>Pre-recorded Lectures</h3>
+    <p>Access pre-recorded lectures available on YouTube.</p>
+    <ul>
+        <!-- Lecture 1 -->
+        <li>
+            <h4>Lecture 1 - Introduction to JavaScript</h4>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/your_video_id_1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <!-- Lecture 2 -->
+        <li>
+            <h4>Lecture 2 - Web Design Fundamentals</h4>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/your_video_id_2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <!-- Lecture 3 -->
+        <li>
+            <h4>Lecture 3 - Database Management Systems</h4>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/your_video_id_3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+    </ul>
+</div>
+
+
+    <!-- Virtual Classroom Section -->
+        <div class="classroom-container">
+            <h2>Welcome to the Virtual Classroom</h2>
+
+            <!-- Live Video Stream -->
+            <div class="video-container">
+                <h3>Live Stream</h3>
+                <!-- Replace with your live video stream or WebRTC integration -->
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/your_live_stream_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Real-time Chat Section -->
+            <div class="chat-container">
+                <h3>Class Chat</h3>
+                <div class="chat-box">
+                    <div class="messages" id="messages">
+                        <!-- Chat messages will appear here -->
+                    </div>
+                    <input type="text" id="chat-input" placeholder="Type your message" />
+                    <button id="send-message">Send</button>
+                </div>
+            </div>
+
+            <!-- Interactive Features (Raise Hand, Poll, etc.) -->
+            <div class="interactive-tools">
+                <button id="raise-hand">Raise Hand</button>
+                <button id="poll">Start Poll</button>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="images/icon/logo.png" style="width: 200px;">
+                <p class="rights-text">Copyright © 2024 EduReach. All Rights Reserved.</p>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">Our Newsletter</h1>
+                <form class="newsletter-form">
+                    <input class="txtb" type="email" placeholder="Enter Your Email">
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
