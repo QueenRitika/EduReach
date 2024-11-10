@@ -12,6 +12,10 @@ const firebaseConfig = {
     appId: "1:752619073496:web:4ffd3ec60487949278ccad",
     measurementId: "G-X12PSTQH25"
 };
+function bypassLogin() {
+    // Redirect to the target page as if login was successful
+    window.location.href = "https://unrivaled-buttercream-25b45b.netlify.app/sessons/live_sessons";
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
